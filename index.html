@@ -1,7 +1,476 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal | Portfolio - Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;600&family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/85b2dddb0c.js" crossorigin="anonymous"></script>
+    
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="assets/logo-no-background.png" alt="" class="logo">
+            <ul id="sidemenu">
+                <li>
+                    <a href="#header">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#services">Skills</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Projects</a>
+                </li>
+                <li>
+                    <a href="#work">Experience</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+                <i class="fas fa-times" onclick="closeMenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hi, I am <span> Rana  Gaballah</span></h1>
+            <p>
+                Software Engineer
+            </p>
+        </div>
+        
+    </div>
+    
+
+</div>
+<!-----------------------about---------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="assets/photo_5972143457084490116_y.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <br>
+                <p>I am a <span>Senior</span> student in the faculty of computers and information Cairo university,
+                     I have acquired technical knowledge and skills from my course as well as practical and business skills.
+                      I have used a range of languages, operating systems and development tools as well as experiencing the system development life cycle.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')" >Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tap" id="skills">
+                        <ul>
+                            <li>
+                                <span>
+                                    Frontend Development 
+                                </span><br>HTML, CSS, JavaScript, Bootstrap
+                            </li>
+                            <li>
+                                <span>
+                                    Backend Development 
+                                </span><br>PHP, Laravel, Django
+                            </li>
+                            <li>
+                                <span>
+                                    Software Development
+                                </span><br>SDLC, Testing
+                            </li>
+                            <li>
+                                <span>
+                                    OOP
+                                </span><br>SOLID, design patterns
+                            </li>
+                            <li>
+                                <span>
+                                    SQL
+                                </span><br>MySQL, Data Modelling, Data Wrangling
+                            </li>
+                            <li>
+                                <span>
+                                    PYTHON
+                                </span><br>Data Manipulation, Model Development and Evaluation, Problem Solving
+                            </li>
+                            <li>
+                                <span>
+                                    Power BI
+                                </span><br>data visualization, reporting, business intelligence
+                            </li>
+                            <li>
+                                <span>
+                                   C++, C#, JAVA
+                                </span>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>
+                                    IEEE CUSB Ai Instructor                   
+                                </span><br> Sep 2022 - May 2023
+                            </li>
+                            <li>
+                                <span>
+                                    SCCI Media Production Member 
+                                </span><br>Sep 2021 - May 2022
+                            </li>
+                            <li>
+                                <span>
+                                    FriendyCar Sales specialist           
+                                </span><br>July 2021 - Aug 2021
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>
+                                    Bachelor degree | Computer Science
+                                </span><br>Faculty
+                                of Computers and Artificial Intelligence <br>Cairo
+                                University <br>
+                                2020 - 2024 <br>Giza, Egypt
+                                
+                            </li>
+                            <li>
+                                <span>
+                                    Department
+                                </span><br>Information Systems
+                            </li>
+                            <li>
+                                <span>
+                                    GPA
+                                </span><br>3.23
+                            </li>
+
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--
+    ------------------------------services-----------------------------------
+-->
+<div id="services">
+    <div class="container">
+
+        <h1 class="sub-title">Skills</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-shield-halved"></i>
+                <h2>web desgin</h2>
+                <p>
+                    Frontend Development encompasses HTML, CSS, JavaScript, and Bootstrap.
+                    Backend Development involves PHP, Laravel, and Django.
+                </p>
+                
+            </div>
+
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Software Development</h2>
+                <p>SDLC (Software Development Life Cycle)
+
+                    Testing: .
+                    
+                    OOP (Object-Oriented Programming): 
+                    
+                    SOLID: SOLID is ans.
+                    
+                    Design Patterns
+                </p>
+                
+            </div>
+            
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>SQL</h2>
+                <p>SQL, TSQL, SSIS,
+                    Querying and manipulating data stored in SQL Server databases 
+                    Building complex data integration workflows to extract, transform, and load data 
+
+                   
+                </p>
+                
+            </div>
+            
+            
+
+        </div>
+
+    </div>
+</div>
+
+<!--
+    -------------------------------------Work---------------------------------------------
+-->
+<div id="work">
+    <div class="container">
+        <h1 class="sub-title">Work Experience</h1>
+        
+        <div class="work-list">
+            <div class="work">
+                <img src="assets/friendcar.png" alt="">
+                <div class="layer">
+                    <h3>
+                        FriendyCar Sales specialist
+                    </h3>
+                    <p> - Filtering the leads data.<br>
+                        - Contacting the leads to explain FriendyCar’s service and encourage them to converge.<br>
+                        - Support the new users via WhatsApp.<br>
+                        </p>
+                    
+                </div>
+            </div>
+            <div class="work">
+                <img src="assets/ieee.jpg" alt="">
+                <div class="layer">
+                    <h3>
+                        IEEE CUSB Ai Instructor
+                    </h3>
+                    <p> - Managing workshops' specialization from planning to production.<br>
+                        - Delivering workshops to participants.<br>
+                        - Recruiting and interviewing qualified participants.<br>
+                        - Developing and monitoring participants' learning curve and progress.<br>
+                        - Improving the technical skills of the participants.<br>
+                        - Preparing the participants to work on projects.<br>
+                        - Creating workshop materials and presentations.<br>
+                       
+                        </p>
+                    
+                </div>
+            </div>
+            <div class="work">
+                <img src="assets/scci.png" alt="">
+                <div class="layer">
+                    <h3>
+                        SCCI Media Production Member
+                    </h3>
+                    <p>  - Photography and video making.<br>
+                         - Coverage for SCCI's sessions and events.<br>
+                         - Visual documentaries for SCCI.<br>
+                         - Managing SCCI's YouTube channel.<br> </p>
+                    
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</div>
+
+<!--
+    ------------------------------------------projects -------------------------------------------
+-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">PROJECTS</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="assets/java1.jpg" alt="">
+                <div class="layer">
+                    <h3>
+                        service Provider Java Application
+                    </h3>
+                    <p>This project aims to develop a robust software solution for managing service providers.<br> In this project, we have implemented the SOLID principles, the Strategy pattern, and the Decorator design pattern. <br>
+                        We have built an API for each function using the Spring framework and Java, 
+                        which can be tested using Postman.</p>
+                    <a href="https://github.com/RanaGaballah/service_provider.git"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="assets/hrr.jpg" alt="">
+                <div class="layer">
+                    <h3>
+                        HR Website
+                    </h3>
+                    <p>The HR Website is a web application designed to streamline HR processes and improve communication within the organization. <br>
+                        It provides various features to simplify HR tasks and enhance employee engagement.<br>
+                        The project leverages the Django framework, HTML, CSS, JS<br>
+                    </p>
+                    <a href="https://github.com/RanaGaballah/HR_Website.git"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="assets/lllll.jpg" alt="">
+                <div class="layer">
+                    <h3>
+                        Connect Four Python Game with GUI
+                    </h3>
+                    <p> Play Connect Four against a computer opponent.<br>
+                        Interactive GUI for an intuitive gaming experience.<br>
+                        Customizable difficulty levels.<br>
+                        Win detection and game over condition.<br>
+                        Simple and clean user interface.<br></p>
+                    <a href="https://github.com/RanaGaballah/ConnectFour_Python_With_GUI.git"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="work-list">
+            <div class="work">
+                <img src="assets/db.jpg" alt="">
+                <div class="layer">
+                    <h3>
+                        Library Store Database Application with C#
+                    </h3>
+                    <p> 
+                        DB application for managing a library store. It provides functionalities to add, edit, and delete books, as well as manage customer information and transactions.<br>
+                        ERD.<br>
+                        SQL-DDL.<br>
+                        SQL-DML.<br>
+                        User interface C#<br>
+                    
+
+                    </p>
+                    <a href="https://github.com/RanaGaballah/LibraryStore.git"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="assets/dw3.jpg" alt="">
+                <div class="layer">
+                    <h3>
+                        Data Warehouse SSIS Project
+                    </h3>
+                    <p>This project implements a data warehouse solution using the Olist E-Commerce store dataset.<br>
+                         The data is extracted from the source system, transformed using SSIS (SQL Server Integration Services), 
+                         and loaded into the destination database. <br>
+                         The project involves the creation of six dimensions and three fact tables in the destination database.<br></p>
+                    <a href="https://github.com/RanaGaballah/Dataware_Housing_Project.git"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="assets/Machine-Learning-Algorithms1.jpg" alt="">
+                <div class="layer">
+                    <h3>
+                        True-Fake News Detector Model
+                    </h3>
+                    <p>
+                        True-fake-news is a NLP model that aims to address the challenge of detecting and classifying news articles as true or fake.
+                        This project leverages machine learning techniques to build a model that can accurately predict the authenticity of news articles. 
+                        By providing a reliable tool for news verification, we aim to combat misinformation and promote informed decision-making.
+                    </p>
+                    <a href="https://github.com/RanaGaballah/True-fake-news.git"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <a href="https://github.com/RanaGaballah" class="btn">See more</a>
+    </div>
+</div>
+
+<!--
+    -------------------------------------------------contact--------------------------------------------
+-->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p> <i class="fa-solid fa-envelope"></i>ranagaballah88@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>01118566002</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/rana.gaballah.5/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com/aurroraa_____?igshid=MmIzYWVlNDQ5Yg=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/rana-gaballah-9a5299219"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/RanaGaballah"><i class="fa-brands fa-github"></i></a>
+                    
+                </div>
+                <a href="assets/resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form onsubmit="sendemail() ; reset(); return false;" >
+
+                    <input type="text" name="name" placeholder="Your name" id="name" required>
+                    <input type="email" name="email" placeholder="your email" id="email" required>
+                    <textarea name="message" id="msg" cols="30" rows="6" placeholder="your message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+                <span id="msgg"></span>
+            </div>
+        </div>
+
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-solid fa-copyright"></i> Rana Gaballah Portfolio</p>
+    </div>
+</div>
+
+
+
+  <script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabvontent of tabcontents){
+            tabvontent.classList.remove("active-tap");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tap");
+
+    }
+
+  </script>
+
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openMenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closeMenu(){
+        sidemenu.style.right = "-200px";
+    }
+  </script>
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    const msgg = document.getElementById("msgg");
+    function sendemail(){
+
+
+        Email.send({
+    SecureToken : "c3433346-eeef-4132-b1f2-afcb9c2f69a7",
+    To : 'ranagaballah88@gmail.com',
+    From : "ranagaballah88@gmail.com",
+    Subject : "email",
+    Body : "Name :  " + document.getElementById("name").value
+            +"<br> Email : " + document.getElementById("email").value
+            +"<br> message : " + document.getElementById("msg").value
+        }).then(
+        message => {msgg.innerHTML = "Message Sent successfully"
+        setTimeout(function(){
+            msgg.innerHTML = ""
+        },2000)
+        
+    });
+    }
+  </script>
+  
 </body>
 </html>
+
+
+
+
